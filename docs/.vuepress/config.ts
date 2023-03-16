@@ -2,7 +2,7 @@ import {defineUserConfig,defaultTheme} from 'vuepress'
 
 export default defineUserConfig({
 	lang: 'zh-CN',
-	title: '你好',
+	title: '',
 	description: '个人博客',
 	theme: defaultTheme({
 		docsBranch: "main",

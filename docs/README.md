@@ -2,8 +2,8 @@
 home: true
 
 [//]: # (heroImage: /hero.png)
-heroText: Hero 标题
-tagline: Hero 副标题
+heroText: 德善教育信息化综合解决方案
+tagline: By 高振 & 倪坤
 actionText: 快速上手 →
 actionLink: /zh/guide/
 ---
