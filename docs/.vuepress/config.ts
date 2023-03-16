@@ -5,6 +5,7 @@ export default defineUserConfig({
 	title: '你好',
 	description: '个人博客',
 	theme: defaultTheme({
+		docsBranch: "main",
 		// public文件路径
 		logo: '/logo.png',
 		// 默认主题配置
