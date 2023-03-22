@@ -17,12 +17,6 @@ export default defineUserConfig({
 				link: '/',
 			},
 			{
-				text: '项目',
-				children: [
-				
-				],
-			},
-			{
 				text: 'CSS效果合集',
 				link: '/projects/css'
 			}
