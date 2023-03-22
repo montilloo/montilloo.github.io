@@ -19,10 +19,7 @@ export default defineUserConfig({
 			{
 				text: '项目',
 				children: [
-					{
-						text: '德善教育',
-						link: '/projects/deshan',
-					},
+				
 				],
 			},
 			{
