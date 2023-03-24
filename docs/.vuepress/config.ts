@@ -19,6 +19,10 @@ export default defineUserConfig({
 			{
 				text: 'CSS效果合集',
 				link: '/projects/css'
+			},
+			{
+				text: '文章',
+				link: '/articles/'
 			}
 		],
 		repo: 'https://github.com/montilloo/montilloo.github.io',
