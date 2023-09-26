@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "handson",
   "version": "3.0.0",
   "scripts": {
     "dev": "astro dev",
