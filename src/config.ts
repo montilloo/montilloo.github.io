@@ -3,8 +3,8 @@ import type { Site, SocialObjects } from "./types";
 export const SITE: Site = {
   website: "https://handson.pages.dev/",
   author: "Nik",
-  desc: "我叫Nik，生活在中国济南，是一位前端开发工程师。这是我的博客，主要记录软件开发过程中的心得体会，当然还有其他一些感兴趣的玩意儿",
-  title: "Hands on",
+  desc: "我叫Nik，是一位生活在山东济南的前端开发工程师。这个博客主要记录软件开发过程中的心得体会和还有其他一些感兴趣的玩意儿",
+  title: "Nik",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerPage: 6,
