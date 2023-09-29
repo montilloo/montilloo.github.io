@@ -4,7 +4,7 @@ author: Sat Naing
 pubDatetime: 2023-09-26T14:37:37.134Z
 postSlug: example-draft-to-published-post
 featured: false
-draft: false
+draft: true
 tags:
   - TypeScript
   - Astro

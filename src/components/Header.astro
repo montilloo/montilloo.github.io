@@ -4,7 +4,7 @@ import Hr from "./Hr.astro";
 import LinkButton from "./LinkButton.astro";
 
 export interface Props {
-  activeNav?: "posts" | "tags" | "about" | "search";
+  activeNav?: "文章" | "标签" | "关于" | "搜索";
 }
 
 const { activeNav } = Astro.props;
@@ -56,25 +56,25 @@ const { activeNav } = Astro.props;
         </button>
         <ul id="menu-items" class="display-none sm:flex">
           <li>
-            <a href="/posts" class={activeNav === "posts" ? "active" : ""}>
-              Posts
+            <a href="/posts" class={activeNav === "文章" ? "active" : ""}>
+              文章
             </a>
           </li>
           <li>
-            <a href="/tags" class={activeNav === "tags" ? "active" : ""}>
-              Tags
+            <a href="/tags" class={activeNav === "标签" ? "active" : ""}>
+              标签
             </a>
           </li>
           <li>
-            <a href="/about" class={activeNav === "about" ? "active" : ""}>
-              About
+            <a href="/about" class={activeNav === "关于" ? "active" : ""}>
+              关于
             </a>
           </li>
           <li>
             <LinkButton
               href="/search"
               className={`focus-outline p-3 sm:p-1 ${
-                activeNav === "search" ? "active" : ""
+                activeNav === "搜索" ? "active" : ""
               } flex`}
               ariaLabel="search"
               title="Search"
