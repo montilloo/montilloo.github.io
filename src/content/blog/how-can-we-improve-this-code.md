@@ -28,7 +28,7 @@ description: 在DOM频繁更新时优化性能的方法。DOM每次被添加到D
     <ul id="myList"></ul>
 
     <script>
-      let items = [...Array(100000).keys()].map(i => `Item ${i}`);
+      let items = [...Array(50000).keys()].map(i => `Item ${i}`);
 
       let ul = document.getElementById("myList");
 
@@ -110,7 +110,7 @@ description: 在DOM频繁更新时优化性能的方法。DOM每次被添加到D
     <ul id="myList"></ul>
 
     <script>
-      let items = [...Array(1000).keys()].map(i => `Item ${i}`);
+      let items = [...Array(50000).keys()].map(i => `Item ${i}`);
 
       let ul = document.getElementById("myList");
       let fragment = document.createDocumentFragment();
@@ -132,16 +132,9 @@ description: 在DOM频繁更新时优化性能的方法。DOM每次被添加到D
 > DocumentFragments (en-US) 是 DOM 节点。它们不是主 DOM 树的一部分。通常的用例是创建文档片段，将元素附加到文档片段，然后将文档片段附加到 DOM 树。在 DOM 树中，文档片段被其所有的子元素所代替。因为文档片段存在于内存中，并不在
 > DOM 树中，所以将子元素插入到文档片段时不会引起页面回流（对元素位置和几何上的计算）。因此，使用文档片段通常会带来更好的性能。
 
-优化前：
-
-![优化前](https://file.notion.so/f/f/87b1d642-f73f-4ae5-b875-ae61fdd8cb20/3e5994f1-4dcd-4f0e-bca7-5e73fbf994f6/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE_2023-09-30_000725.png?id=0db927ac-51f8-4571-866c-6f1efbf14daa&table=block&spaceId=87b1d642-f73f-4ae5-b875-ae61fdd8cb20&expirationTimestamp=1696118400000&signature=SC_0aeht3HHDkqfl94uayi3lT4FTLcAddR-AeBZdcyA&downloadName=%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE+2023-09-30+000725.png)
-
-优化后：
-
-![优化后](https://file.notion.so/f/f/87b1d642-f73f-4ae5-b875-ae61fdd8cb20/1d9e5c64-ebf0-417b-ae71-eb9b5d26c935/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE_2023-09-30_003000.png?id=7f2ec482-bd60-4413-9298-83788eb76f1c&table=block&spaceId=87b1d642-f73f-4ae5-b875-ae61fdd8cb20&expirationTimestamp=1696118400000&signature=9_KBNhjvXJWFrAymD_2nr1NCBRuGgyNdh9XxkUbIHhY&downloadName=%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE+2023-09-30+003000.png)
-
 参考链接：
 
+- **[MDN DocumentFragment](https://developer.mozilla.org/zh-CN/docs/Web/API/DocumentFragment)**
 - **[第 22 题：介绍下重绘和回流（Repaint & Reflow），以及如何进行优化](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/24)**
 - **[浏览器的重绘与回流（Repaint、Reflow）](https://github.com/sisterAn/blog/issues/33)**
 - **[What forces layout / reflow](https://gist.github.com/paulirish/5d52fb081b3570c81e3a#what-forces-layout--reflow)**
